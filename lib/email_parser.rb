@@ -6,11 +6,14 @@
 
 class EmailParser
 
-  
-  attr_accessor :emails
 
+  attr_reader :emails
 
-  def parse(emails)
-    @emails = emails.split(/[,\w]+/)
+  def initialize(emails)
+    @emails = emails
+  end
+
+  def parse
+    @emails.split(/[,\w]+/)
   end
 end

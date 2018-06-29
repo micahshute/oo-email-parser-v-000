@@ -6,15 +6,9 @@
 
 class EmailParser
 
-
-  def self.create_with_csv(emails)
-  end
-
+  
   attr_accessor :emails
 
-  def initialize
-
-  end
 
   def parse(emails)
     @emails = emails.split(/[,\w]+/)
